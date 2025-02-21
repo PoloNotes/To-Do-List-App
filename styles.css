@@ -1,0 +1,89 @@
+/* Reset default browser style */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic page styling */
+
+body {
+    font-family: Arial, sans-serif;     /* changes content */
+    background-color: #f0f0f0;      /* light grey colour */
+    display:flex;                   /*  A layout tool that centers the centers content .container */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Makes the body take up the full height of the viewport.This is full screen height */
+}
+
+/* Container styling */
+
+.container { /* white box outside the to do list */
+    background-color: #fff; /* white background for contrast */
+    padding: 20px;            /* Space inside the box */
+    border-radius: 10px;      /* rounded corners */
+    width: 90%;               /* responsive width */
+    max-width: 400px;         /* Prevents it from becoming to wide*/
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);     /*subtle shadow */
+}
+
+/* Heading style */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input and button styles */
+
+#task-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /*rounded corners */
+}
+
+#add-task-button {
+    width: 25%;                   /* this changes the width of the button */
+    padding: 10px;
+    margin-left: 5px;
+    background-color: #28a745;  /* adds green background*/
+    color: white;               /* white text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;              /* Pointer on hover */
+}
+
+#add-task-button:hover {
+    background-color: #218838;  /* darker green when hovering over */
+}
+
+/* Task list styling */
+
+#task-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#task-list li {
+    background-color: #e9ecef; /* Light background for tasks */
+    padding: 10px;
+    margin-bottom: 10px;    /* Space between the tasks */
+    border-radius: 5px;
+    display: flex;          /* Aligns text and button on the same line */
+    justify-content: space-between;
+}
+
+#task-list li button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#task-list li button:hover {
+    background-color: #c82333;
+}
