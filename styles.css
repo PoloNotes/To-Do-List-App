@@ -10,7 +10,7 @@
 
 body {
     font-family: Arial, sans-serif;     /* changes content */
-    background-color: #f0f0f0;      /* light grey colour */
+    background-color: #f0f0f0;      /* light grey color */
     display:flex;                   /*  A layout tool that centers the centers content .container */
     justify-content: center;
     align-items: center;
